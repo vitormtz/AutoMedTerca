@@ -25,7 +25,7 @@ public class ConexaoBD {
             String dbdriver = prop.getProperty("db.driver");
             String dburl = prop.getProperty("db.url");
             String dbuser = prop.getProperty("db.user");
-            String dbsenha = "postgres";
+            String dbsenha = prop.getProperty("db.senha");
 
             // Carrega Driver do Banco de Dados
             Class.forName(dbdriver);
